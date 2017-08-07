@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="maven-archiver">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/target/maven-archiver" />
+    </SOURCES>
+  </library>
+</component>

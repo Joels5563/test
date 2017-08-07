@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="es.dao.TVdProptProjectMapper" >
+  <resultMap id="BaseResultMap" type="es.domain.TVdProptProject" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="project_id" property="projectId" jdbcType="BIGINT" />
+    <result column="vendor_id" property="vendorId" jdbcType="BIGINT" />
+    <result column="project_no" property="projectNo" jdbcType="CHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="project_type" property="projectType" jdbcType="TINYINT" />
+    <result column="detail_addr" property="detailAddr" jdbcType="VARCHAR" />
+    <result column="zip_code" property="zipCode" jdbcType="CHAR" />
+    <result column="country_code" property="countryCode" jdbcType="CHAR" />
+    <result column="region_first_code" property="regionFirstCode" jdbcType="CHAR" />
+    <result column="region_second_code" property="regionSecondCode" jdbcType="CHAR" />
+    <result column="region_third_code" property="regionThirdCode" jdbcType="CHAR" />
+    <result column="region_forth_code" property="regionForthCode" jdbcType="CHAR" />
+    <result column="project_state" property="projectState" jdbcType="TINYINT" />
+    <result column="min_price" property="minPrice" jdbcType="DECIMAL" />
+    <result column="max_price" property="maxPrice" jdbcType="DECIMAL" />
+    <result column="front_image" property="frontImage" jdbcType="VARCHAR" />
+    <result column="longitude" property="longitude" jdbcType="VARCHAR" />
+    <result column="latitude" property="latitude" jdbcType="VARCHAR" />
+    <result column="target_distance" property="targetDistance" jdbcType="DECIMAL" />
+    <result column="target_reference" property="targetReference" jdbcType="TINYINT" />
+    <result column="reservation_fee" property="reservationFee" jdbcType="DECIMAL" />
+    <result column="currency_type" property="currencyType" jdbcType="CHAR" />
+    <result column="contacts_name" property="contactsName" jdbcType="VARCHAR" />
+    <result column="contacts_phone" property="contactsPhone" jdbcType="VARCHAR" />
+    <result column="contacts_email" property="contactsEmail" jdbcType="VARCHAR" />
+    <result column="lawyer_name" property="lawyerName" jdbcType="VARCHAR" />
+    <result column="lawyer_phone" property="lawyerPhone" jdbcType="VARCHAR" />
+    <result column="lawyer_email" property="lawyerEmail" jdbcType="VARCHAR" />
+    <result column="is_abroad" property="isAbroad" jdbcType="BIT" />
+    <result column="abroad_percent" property="abroadPercent" jdbcType="DECIMAL" />
+    <result column="abroad_number" property="abroadNumber" jdbcType="SMALLINT" />
+    <result column="is_under" property="isUnder" jdbcType="BIT" />
+    <result column="data_complete" property="dataComplete" jdbcType="CHAR" />
+    <result column="del_flag" property="delFlag" jdbcType="BIT" />
+    <result column="creator_id" property="creatorId" jdbcType="BIGINT" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="version" property="version" jdbcType="INTEGER" />
+    <result column="reservation_detail" property="reservationDetail" jdbcType="VARCHAR" />
+    <result column="property_count" property="propertyCount" jdbcType="INTEGER" />
+    <result column="sold_count" property="soldCount" jdbcType="INTEGER" />
+    <result column="quality_year" property="qualityYear" jdbcType="DECIMAL" />
+    <result column="term_number" property="termNumber" jdbcType="TINYINT" />
+    <result column="last_time" property="lastTime" jdbcType="TIMESTAMP" />
+    <result column="description" property="description" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

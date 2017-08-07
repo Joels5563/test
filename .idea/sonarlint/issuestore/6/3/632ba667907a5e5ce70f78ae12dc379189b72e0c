@@ -1,0 +1,17 @@
+
+U
+squid:S106";Replace this usage of System.out or System.err by a logger.(¿ˆÿp8ŒÜ•»Ğ+
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8·€ØºĞ+
+Jsquid:S2140")Use "java.util.Random.nextInt()" instead.(ìËÎ‘ıÿÿÿÿ8•ÆôºĞ+
+Usquid:S1854"9Remove this useless assignment to local variable "index".(Ò–÷ä8–‘¬µĞ+
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8²Ä‚»Ğ+
+V
+squid:S106";Replace this usage of System.out or System.err by a logger.(†ÜºÑ8É—ÖºĞ+
+V
+squid:S106";Replace this usage of System.out or System.err by a logger.(²É‡8²Ä‚»Ğ+
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÄ»şÿÿÿÿ8´ÿ•»Ğ+
+Jsquid:S2140")Use "java.util.Random.nextInt()" instead.(Ãìƒ¤üÿÿÿÿ8ãŒ¡´Ğ+
+msquid:S1132"LMove the "é»‘æ¡ƒ" string literal on the left side of this string comparison.(³ò¡Ôÿÿÿÿÿ8ÈË¥µĞ+

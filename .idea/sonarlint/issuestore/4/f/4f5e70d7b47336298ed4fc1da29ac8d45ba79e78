@@ -1,0 +1,22 @@
+
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(ˆ÷Ñúÿÿÿÿ8ûÖù°Ğ+
+[squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ˆ¸Œãûÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(•úü¨
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÿ‰îÿ
+^squid:S2147"DCombine this catch with the one at line 84, which has the same body.(åşŒóùÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(„İ‹şÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(»ûôÅüÿÿÿÿ
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(Ñ‹’¸şÿÿÿÿ8¬Äø°Ğ+
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+V
+squid:S106";Replace this usage of System.out or System.err by a logger.(Òæ×Ú8ûÖù°Ğ+
+gsquid:S1192"MDefine a constant instead of duplicating this literal "computeCount" 5 times.(Òêûÿÿÿÿ
+?squid:S1166"%Either log or rethrow this exception.(åşŒóùÿÿÿÿ

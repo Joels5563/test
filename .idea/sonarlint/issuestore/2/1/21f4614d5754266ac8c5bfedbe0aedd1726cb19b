@@ -1,0 +1,11 @@
+
+Asquid:S2129" Remove this "String" constructor(Ç‰ÍÆýÿÿÿÿ8¶å®²Ð+
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(îÞ¿õûÿÿÿÿ8¶å®²Ð+
+V
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªò±”8¿ƒ”´Ð+
+V
+squid:S106";Replace this usage of System.out or System.err by a logger.(Ã¢¡»8¶å®²Ð+
+Usquid:S1118":Add a private constructor to hide the implicit public one.(«”°i8¶å®²Ð+
+V
+squid:S106";Replace this usage of System.out or System.err by a logger.(—±ÿé8¶å®²Ð+

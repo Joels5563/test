@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:aliyunMq.properties"/>
+
+    <!--Listener配置-->
+    <bean id="msgListener" class="cn.ipx.msgListener.IpxMessageListener"/>
+
+    <!--消费者配置信息-->
+    <bean id="consumer" class="com.aliyun.openservices.ons.api.bean.ConsumerBean"
+          init-method="start" destroy-method="shutdown">
+        <property name="properties" >
+            <props>
+                <prop key="ConsumerId">${aliyunMq.ConsumerId}</prop>
+                <prop key="AccessKey">${aliyunMq.AccessKey}</prop>
+                <prop key="SecretKey">${aliyunMq.SecretKey}</prop>
+                <!--将消费者线程数固定为50个
+                <prop key="ConsumeThreadNums">50</prop>
+                -->
+            </props>
+        </property>
+        <property name="subscriptionTable">
+            <map>
+                <entry value-ref="msgListener">
+                    <key>
+                        <bean class="com.aliyun.openservices.ons.api.bean.Subscription">
+                            <property name="topic" value="${aliyunMq.Topic}"/>
+                            <!--expression即Tag，可以设置成具体的Tag，如 taga||tagb||tagc，也可设置成*。 *仅代表订阅所有Tag，不支持通配-->
+                            <property name="expression" value="*"/>
+                        </bean>
+                    </key>
+                </entry>
+                <!--更多的订阅添加entry节点即可，如下所示-->
+                <!--<entry value-ref="msgListener">
+                    <key>
+                        <bean class="com.aliyun.openservices.ons.api.bean.Subscription">
+                            &lt;!&ndash;订阅另外一个Topic &ndash;&gt;
+                            <property name="topic" value="TopicTestMQ-Other"/>
+                            &lt;!&ndash; 订阅多个Tag &ndash;&gt;
+                            <property name="expression" value="taga||tagb"/>
+                        </bean>
+                    </key>
+                </entry>-->
+            </map>
+        </property>
+    </bean>
+
+</beans>
