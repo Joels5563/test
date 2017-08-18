@@ -30,19 +30,19 @@ public class ProjectListService implements IProjectListService {
 
     @Override
     public List<TVdProptProject> getProjectList() {
-//        try {
-//            return new SelectAllThread<TVdProptProject>(projectMapper,null).call();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        Map<String,Object> params = new HashMap<>();
-//        params.put("projectNo","J1");
-//
-//        try {
-//            return new SelectByExampleThread<TVdProptProject>(projectMapper, new Example(TVdProptProject.class),params).call();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        try {
+            return new SelectAllThread<TVdProptProject>(projectMapper,null).call();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Map<String,Object> params = new HashMap<>();
+        params.put("projectNo","J1");
+
+        try {
+            return new SelectByExampleThread<TVdProptProject>(projectMapper, new Example(TVdProptProject.class),params).call();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return null;
     }
